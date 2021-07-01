@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kirang Haerang', cursive;  
+    font-size: 10px;
+    background-color: whitesmoke;
+}
+
+header{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+    background-color:black;
+}
+p{
+    font-size:2em;
+    margin-left: 3em;
+}
+/* Loader Styling */
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50z);
+    -webkit-transform: translate(-50z);
+    -moz-transform: translate(-50z);
+    -ms-transform: translate(-50z);
+    -o-transform: translate(-50z);
+}
+
+
+/* Styling our images container */
+
+.image-container{
+    display:grid;
+    margin:5px 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+
+/* styling for mobile devices */
+@media screen and (max-width:500px){
+    .image-container{
+        display:grid;
+        margin:2% 2%;
+        grid-template-columns: 1fr ;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+    }
+    
+}
+
+/* styling for larger devices */
+@media screen and (max-width: 1100px) and (min-width: 500px) {
+    .image-container{
+        display:grid;
+        margin:2% 2%;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+    }
+    
+}
